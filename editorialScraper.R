@@ -42,11 +42,9 @@ urls <- paste0("https://www.journals.elsevier.com/", journals$url_stub, "/editor
 all_rows <- list()
 
 # iterate over list of journals to read html pages and extract editor info
-for (i in 1:100) {
+for (i in length(urls)) {
+  # tryCatch wraps the extraction in case of a 404 error; if a page does not exist, return an empty list
   all_rows[[i]] <- tryCatch(read_html(urls[i]) %>% get_editor_list(journals$full_title[i]), error=function(e){list()})
-  #page <- read_html(urls[i])
-  #current_rows <- get_editor_list(page, journals$full_title[i])
-  #all_rows[[i]] <- current_rows
 }
 
 # combine rows into single tibble
