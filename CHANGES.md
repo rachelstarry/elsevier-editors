@@ -20,4 +20,4 @@
 2019-9-13
 ------
 * Script testing, manually updated "elsevier-cleaned.csv" with corrections to inaccurate journal title urls
-	* Updated rows 118, 124, 183, 196, 219
+	* Updated rows 118, 124, 183, 196, 217, 219, 232, 324, 654, 696, 698, 710, 729, 734, 735, 922, 1238, 1566, 1625, 2102, 2218, 2274, 2291  
