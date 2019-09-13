@@ -16,3 +16,8 @@
 2019-09-12
 ------
 * Created script to scrape editorial board pages - "editorialScraper.R"
+
+2019-9-13
+------
+* Script testing, manually updated "elsevier-cleaned.csv" with corrections to inaccurate journal title urls
+	* Updated rows 118, 124, 183, 196, 219
